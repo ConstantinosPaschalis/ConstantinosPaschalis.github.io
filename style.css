@@ -6,7 +6,7 @@ body {
   display: flex;
 }
 
-/* SIDEBAR (LEFT NAV) */
+/* SIDEBAR */
 .sidebar {
   width: 220px;
   height: 100vh;
@@ -32,7 +32,7 @@ body {
   color: #0077cc;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 .main {
   margin-left: 240px;
   padding: 40px;
@@ -49,7 +49,7 @@ body {
 .profile-pic {
   width: 220px;
   height: 220px;
-  border-radius: 10px; /* makes it square with slight rounding */
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -58,7 +58,7 @@ body {
   font-weight: 500;
 }
 
-/* PROJECTS */
+/* CARDS */
 .card {
   background: white;
   padding: 20px;
@@ -67,62 +67,17 @@ body {
   border: 1px solid #ddd;
 }
 
+/* HEADER */
 .project-header {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.project-logo {
-  width: 35px;
-  height: 35px;
-}
-
-.project-body {
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-.project-image {
-  width: 120px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.project-text {
-  flex: 1;
-}
-
-
-.project-links a {
-  margin-right: 15px;
-  color: #0077cc;
-  text-decoration: none;
-}
-
-.project-links a:hover {
-  text-decoration: underline;
-}
-
-.project-divider {
-  border: none;
-  height: 1px;
-  background: #ddd;
-  margin: 10px 0 15px 0;
-}
-
 .project-title {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-}
-
-.project-date {
-  margin: 0;
-  font-size: 13px;
-  color: #666;
-  font-style: italic;
 }
 
 .project-place {
@@ -139,6 +94,58 @@ body {
   font-style: italic;
 }
 
+/* DIVIDER */
+.project-divider {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0 15px 0;
+}
+
+/* BODY */
+.project-body {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* NORMAL IMAGE */
+.project-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* TEXT */
+.project-text {
+  flex: 1;
+}
+
+/* LINKS */
+.project-links a {
+  margin-right: 15px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* REVERSE (image on right) */
 .project-body.reverse {
   flex-direction: row-reverse;
+}
+
+/* ALZHEIMER SPECIAL (UCY left + AD right) */
+.project-body.triple-layout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-side-logo {
+  width: 60px;
+  height: auto;
 }
