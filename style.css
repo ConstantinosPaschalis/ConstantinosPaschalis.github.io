@@ -1,7 +1,6 @@
-/* GENERAL */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, sans-serif;
   background: #0f172a;
   color: white;
 }
@@ -10,23 +9,14 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 40px;
   background: #020617;
-  position: sticky;
-  top: 0;
-}
-
-.nav-left {
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .nav-right a {
   margin-left: 20px;
   color: #38bdf8;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .nav-right a:hover {
@@ -42,46 +32,25 @@ body {
 
 /* HERO */
 .hero {
-  margin-top: 80px;
+  text-align: center;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
 .tagline {
-  font-size: 20px;
   color: #38bdf8;
-  margin-bottom: 20px;
-}
-
-.intro {
-  color: #cbd5e1;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-/* SECTIONS */
-h2 {
-  margin-top: 60px;
-  font-size: 26px;
-  border-bottom: 1px solid #334155;
-  padding-bottom: 5px;
-}
-
-/* TEXT */
-p {
-  color: #cbd5e1;
-  line-height: 1.6;
 }
 
 /* CARDS */
 .card {
   background: #1e293b;
   padding: 20px;
-  margin-top: 20px;
-  border-radius: 12px;
+  margin-top: 30px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
@@ -90,18 +59,29 @@ p {
   background: #334155;
 }
 
-/* CONTACT LINKS */
-.contact-links {
-  margin-top: 20px;
+/* IMAGES */
+.project-image {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.contact-links a {
-  margin-right: 20px;
+/* LINKS */
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  margin-right: 15px;
   color: #38bdf8;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.contact-links a:hover {
+.project-links a:hover {
   text-decoration: underline;
+}
+
+/* CONTACT */
+.contact-links a {
+  margin: 10px;
+  color: #38bdf8;
 }
