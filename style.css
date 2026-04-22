@@ -104,3 +104,10 @@ body {
 .project-links a:hover {
   text-decoration: underline;
 }
+
+.project-divider {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0 15px 0;
+}
