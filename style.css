@@ -111,3 +111,16 @@ body {
   background: #ddd;
   margin: 10px 0 15px 0;
 }
+
+.project-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-date {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+}
