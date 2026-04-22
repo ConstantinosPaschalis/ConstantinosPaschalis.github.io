@@ -194,8 +194,7 @@ body {
 
 .eth-image {
   width: 120px;
-  border-radius: 4px;
-  height: 30px;
+  border-radius: 8px;
 }
 
 .project-side-logo {
