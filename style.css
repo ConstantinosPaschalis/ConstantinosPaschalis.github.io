@@ -43,7 +43,20 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+}
+
+/* LEFT SIDE (image + name stacked) */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+/* RIGHT SIDE (text) */
+.hero-right {
+  flex: 1;
 }
 
 .profile-pic {
