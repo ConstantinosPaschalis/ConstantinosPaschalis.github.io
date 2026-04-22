@@ -4,63 +4,152 @@
   <title>Constantinos Paschalis</title>
   <style>
     body {
-      font-family: Arial;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background: #f8f9fb;
+      color: #1a1a1a;
     }
-    h1 { color: #2c3e50; }
-    h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .subtitle {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .project-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 
 <body>
 
-<h1>Constantinos Paschalis</h1>
-<p><b>Mechanical Engineer | Energy Systems | Optimization</b></p>
+<div class="container">
 
-<h2>About Me</h2>
-<p>
-Mechanical Engineering graduate with strong background in energy systems,
-HVAC, and optimization. Experience in research at ETH Zürich and Texas A&M.
-Focused on sustainable energy solutions and techno-economic modeling.
-</p>
+  <!-- HEADER -->
+  <h1>Constantinos Paschalis</h1>
+  <p class="subtitle">Mechanical Engineer | Energy Systems | Optimization</p>
 
-<h2>Projects</h2>
+  <p>
+    📍 Zurich &nbsp; | &nbsp;
+    📧 Con.paschalis@gmail.com
+  </p>
 
-<h3>CO₂ Transport Resilience (ETH Zürich)</h3>
-<p>
-Developed a techno-economic framework to evaluate resilience strategies in CO₂ transport systems.
-Analyzed cost vs emissions trade-offs under infrastructure failure scenarios.
-</p>
+  <!-- ABOUT -->
+  <h2>About</h2>
+  <p>
+    Mechanical Engineering graduate with strong expertise in energy systems, HVAC,
+    and optimization. Experience in research at ETH Zürich and Texas A&M University,
+    focusing on techno-economic modeling and data-driven analysis. Passionate about
+    sustainable energy solutions and real-world engineering challenges.
+  </p>
 
-<h3>Household Energy Optimization</h3>
-<p>
-Optimized household appliances using real electricity price data.
-Minimized cost and emissions using CAPEX, OPEX, and LCOE metrics.
-</p>
+  <!-- PROJECTS -->
+  <h2>Projects</h2>
 
-<h3>High Temperature Heat Pump Design</h3>
-<p>
-Designed and modeled a heat pump system with thermodynamic analysis.
-Optimized refrigerant selection and system efficiency.
-</p>
+  <div class="card">
+    <div class="project-title">CO₂ Transport Resilience – ETH Zürich</div>
+    <ul>
+      <li>Developed a techno-economic framework for CO₂ transport systems</li>
+      <li>Analyzed cost vs emissions under infrastructure failure scenarios</li>
+      <li>Evaluated resilience strategies including storage and alternative transport</li>
+    </ul>
+  </div>
 
-<h3>HVAC Data Analysis (Texas A&M)</h3>
-<p>
-Analyzed building energy data, comparing simulated and measured performance.
-Used RMSE and data-driven methods to evaluate system behavior.
-</p>
+  <div class="card">
+    <div class="project-title">Household Energy Optimization</div>
+    <ul>
+      <li>Optimized appliance selection using CAPEX, OPEX, and LCOE metrics</li>
+      <li>Used real electricity price datasets and optimization algorithms</li>
+      <li>Minimized cost and CO₂ emissions across multiple scenarios</li>
+    </ul>
+  </div>
 
-<h2>Skills</h2>
-<ul>
-<li>Python, MATLAB</li>
-<li>ANSYS, SolidWorks</li>
-<li>Energy Systems, HVAC, Optimization</li>
-</ul>
+  <div class="card">
+    <div class="project-title">High Temperature Heat Pump Design</div>
+    <ul>
+      <li>Designed thermodynamic model of a heat pump system</li>
+      <li>Optimized refrigerant selection and system efficiency</li>
+      <li>Performed performance analysis using MATLAB</li>
+    </ul>
+  </div>
 
-<h2>Contact</h2>
-<p>Email: Con.paschalis@gmail.com</p>
+  <div class="card">
+    <div class="project-title">HVAC Data Analysis – Texas A&M</div>
+    <ul>
+      <li>Analyzed simulated vs measured HVAC system performance</li>
+      <li>Applied RMSE and statistical methods for model validation</li>
+      <li>Investigated temperature, load, and power relationships</li>
+    </ul>
+  </div>
+
+  <!-- EDUCATION -->
+  <h2>Education</h2>
+  <div class="card">
+    <b>BSc Mechanical Engineering – University of Cyprus</b><br>
+    Grade: 9.06 / 10 (Top of class)<br>
+    2020 – 2024
+  </div>
+
+  <div class="card">
+    <b>Energy & Sustainability Summer School – Texas A&M</b><br>
+    2024
+  </div>
+
+  <!-- SKILLS -->
+  <h2>Skills</h2>
+  <div class="card">
+    <p><b>Programming:</b> Python, MATLAB</p>
+    <p><b>Engineering Tools:</b> ANSYS, SolidWorks</p>
+    <p><b>Areas:</b> Energy Systems, HVAC, Optimization</p>
+  </div>
+
+  <!-- CONTACT -->
+  <h2>Contact</h2>
+  <div class="card contact">
+    <p>Email: <a href="mailto:Con.paschalis@gmail.com">Con.paschalis@gmail.com</a></p>
+  </div>
+
+</div>
 
 </body>
 </html>
