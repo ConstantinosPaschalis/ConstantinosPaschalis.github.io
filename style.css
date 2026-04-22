@@ -130,6 +130,12 @@ body {
   border-radius: 8px;
 }
 
+.eth-image {
+  width: auto;        /* let it keep its natural width */
+  height: 70px;       /* control size using height instead */
+  object-fit: contain;
+}
+
 /* TEXT */
 .project-text {
   flex: 1;
