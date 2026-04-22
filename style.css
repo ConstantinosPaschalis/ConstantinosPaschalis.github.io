@@ -138,3 +138,7 @@ body {
   color: #777;
   font-style: italic;
 }
+
+.project-body.reverse {
+  flex-direction: row-reverse;
+}
