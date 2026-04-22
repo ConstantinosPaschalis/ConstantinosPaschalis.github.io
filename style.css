@@ -193,8 +193,8 @@ body {
 }
 
 .eth-image {
+  width: 120px,
   height: 70px;
-  width: auto;
 }
 
 .project-side-logo {
