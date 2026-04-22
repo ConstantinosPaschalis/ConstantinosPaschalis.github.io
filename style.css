@@ -1,87 +1,102 @@
 body {
   margin: 0;
   font-family: -apple-system, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-/* NAVBAR */
-.nav {
+  background: #f5f7fb;
+  color: #1a1a1a;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #020617;
 }
 
-.nav-right a {
-  margin-left: 20px;
-  color: #38bdf8;
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 30px 20px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
   text-decoration: none;
+  font-weight: 500;
 }
 
-.nav-right a:hover {
-  text-decoration: underline;
+.sidebar a:hover {
+  color: #0077cc;
 }
 
-/* CONTAINER */
-.container {
+/* MAIN CONTENT */
+.main {
+  margin-left: 240px;
+  padding: 40px;
   max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
 }
 
 /* HERO */
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .profile-pic {
-  width: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  margin-top: 20px;
+  object-fit: cover;
 }
 
 .tagline {
-  color: #38bdf8;
+  color: #0077cc;
+  font-weight: 500;
 }
 
-/* CARDS */
+.intro {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* PROJECT CARDS */
 .card {
-  background: #1e293b;
+  background: white;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
   border-radius: 10px;
-  transition: 0.3s;
+  border: 1px solid #ddd;
+  transition: 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  background: #334155;
+  transform: translateY(-3px);
 }
 
-/* IMAGES */
-.project-image {
-  width: 100%;
-  border-radius: 10px;
+/* LOGO INLINE */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 /* LINKS */
-.project-links {
-  margin-top: 10px;
-}
-
 .project-links a {
   margin-right: 15px;
-  color: #38bdf8;
+  color: #0077cc;
   text-decoration: none;
 }
 
 .project-links a:hover {
   text-decoration: underline;
-}
-
-/* CONTACT */
-.contact-links a {
-  margin: 10px;
-  color: #38bdf8;
 }
