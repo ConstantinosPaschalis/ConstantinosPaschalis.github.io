@@ -538,3 +538,8 @@ body {
 .project-text strong {
   color: #0077cc;
 }
+
+.project-text i {
+  margin-right: 6px;
+  color: #0077cc;
+}
