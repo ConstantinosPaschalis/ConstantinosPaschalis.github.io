@@ -12,6 +12,14 @@ body {
   background: #ffffff;
   color: #1a1a1a;
   display: flex;
+
+  animation: fadeIn 0.4s ease;
+}
+
+/* PAGE FADE-IN */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ========================= */
@@ -38,6 +46,8 @@ body {
   font-size: 20px;
 }
 
+/* NAV LINKS */
+
 .sidebar a {
   display: block;
   font-size: 16px;
@@ -49,17 +59,21 @@ body {
   font-weight: 500;
 
   transition: all 0.2s ease;
+  position: relative;
 }
 
+/* HOVER */
 .sidebar a:hover {
   background: #eef5ff;
   color: #0077cc;
+  transform: translateX(3px);
 }
 
 /* ACTIVE LINK */
 .nav-link.active {
   background: #0077cc;
   color: white;
+  font-weight: 600;
 }
 
 /* ========================= */
@@ -171,7 +185,7 @@ body {
 .card {
   background: #ffffff;
   padding: 20px;
-  margin-top: 25px;
+  margin-top: 30px;
   border-radius: 10px;
   border: 1px solid #ddd;
 
@@ -253,6 +267,13 @@ body {
   flex: 1;
 }
 
+/* BETTER TEXT READABILITY */
+
+.project-text p {
+  line-height: 1.6;
+  font-size: 14.5px;
+}
+
 /* INTERACTIVE LINKS */
 
 .project-links a {
@@ -302,11 +323,11 @@ body {
     height: auto;
     position: relative;
     padding: 10px 15px;
-    gap: 10px;
     border-bottom: 1px solid #ddd;
 
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   /* TOP BAR */
@@ -314,6 +335,8 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
   }
 
   .menu-toggle {
@@ -324,21 +347,29 @@ body {
     cursor: pointer;
   }
 
+  .menu-toggle:active {
+    transform: scale(0.9);
+  }
+
   .current-page {
     font-size: 16px;
     font-weight: 600;
   }
 
-  /* 🔴 THIS FIXES YOUR PROBLEM */
+  /* MENU ANIMATION */
   .sidebar h2,
   .sidebar a {
+    opacity: 0;
+    transform: translateY(-10px);
     display: none;
+    transition: all 0.25s ease;
   }
 
-  /* 🔴 THIS MAKES BUTTON WORK */
   .sidebar.open h2,
   .sidebar.open a {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
     margin-top: 10px;
   }
 
@@ -361,6 +392,10 @@ body {
   .profile-pic {
     width: 200px;
     height: 200px;
+  }
+
+  .hero-left h1 {
+    font-size: 20px;
   }
 
   /* BUTTONS */
