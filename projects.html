@@ -453,27 +453,27 @@
 
   
 <script>
-  // sidebar toggle (keep yours)
+  // sidebar toggle (keep)
   const toggle = document.querySelector('.menu-toggle');
   const sidebar = document.querySelector('.sidebar');
 
-  toggle.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-  });
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  }
 
-  // project collapse
-  const cards = document.querySelectorAll('.card');
+  // project collapse (fixed)
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.card');
 
-  cards.forEach(card => {
-    const btn = card.querySelector('.toggle-btn');
-
-    btn.addEventListener('click', () => {
       card.classList.toggle('collapsed');
       card.classList.toggle('open');
     });
   });
 </script>
-
+  
 </body>
 </html>
 
