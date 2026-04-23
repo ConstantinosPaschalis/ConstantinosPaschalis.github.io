@@ -443,3 +443,56 @@ body {
     padding: 15px;
   }
 }
+
+/* ========================= */
+/* NEW: RESULT IMAGE LAYOUT */
+/* ========================= */
+
+/* For projects with result images (CO2, MAN) */
+.project-body.with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+/* Make text take available space */
+.project-body.with-image .project-text {
+  flex: 1;
+}
+
+/* Large result images (right side) */
+.project-image.large {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ========================= */
+/* FEATURED PROJECT */
+/* ========================= */
+
+.card.featured {
+  border: 2px solid #0077cc;
+  background: #f9fbff;
+}
+
+/* ========================= */
+/* MOBILE FIX FOR NEW LAYOUT */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* Stack image below text */
+  .project-body.with-image {
+    flex-direction: column;
+  }
+
+  .project-image.large {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
