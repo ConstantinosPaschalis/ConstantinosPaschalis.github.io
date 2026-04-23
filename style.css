@@ -59,7 +59,7 @@ body {
 /* ACTIVE LINK */
 .nav-link.active {
   background: #0077cc;
-  color: #ffffff;
+  color: white;
 }
 
 /* ========================= */
@@ -263,8 +263,6 @@ body {
   font-weight: 500;
 }
 
-/* underline animation */
-
 .project-links a::after {
   content: "";
   position: absolute;
@@ -301,6 +299,7 @@ body {
   /* SIDEBAR */
   .sidebar {
     width: 100%;
+    height: auto;
     position: relative;
     padding: 10px 15px;
     border-bottom: 1px solid #ddd;
@@ -309,7 +308,7 @@ body {
     flex-direction: column;
   }
 
-  /* MOBILE HEADER */
+  /* TOP BAR */
   .mobile-header {
     display: flex;
     align-items: center;
@@ -329,14 +328,13 @@ body {
     font-weight: 600;
   }
 
-  /* HIDE MENU */
+  /* 🔴 THIS FIXES YOUR PROBLEM */
   .sidebar h2,
   .sidebar a {
     display: none;
-    width: 100%;
   }
 
-  /* SHOW MENU WHEN OPEN */
+  /* 🔴 THIS MAKES BUTTON WORK */
   .sidebar.open h2,
   .sidebar.open a {
     display: block;
@@ -362,10 +360,6 @@ body {
   .profile-pic {
     width: 200px;
     height: 200px;
-  }
-
-  .hero-left h1 {
-    font-size: 20px;
   }
 
   /* BUTTONS */
