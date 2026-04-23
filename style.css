@@ -1,4 +1,7 @@
+/* ========================= */
 /* GLOBAL */
+/* ========================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,8 +12,6 @@ body {
   background: #ffffff;
   color: #1a1a1a;
   display: flex;
-
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ========================= */
@@ -39,8 +40,7 @@ body {
 
 .sidebar a {
   display: block;
-  margin-bottom: 10px;
-  font-size: 16px;                 /* bigger nav */
+  font-size: 16px;
   padding: 8px 10px;
   border-radius: 8px;
 
@@ -54,6 +54,12 @@ body {
 .sidebar a:hover {
   background: #eef5ff;
   color: #0077cc;
+}
+
+/* ACTIVE LINK */
+.nav-link.active {
+  background: #0077cc;
+  color: #ffffff;
 }
 
 /* ========================= */
@@ -136,12 +142,14 @@ body {
 }
 
 /* DIVIDER */
+
 .hero-divider {
   width: 1px;
   background: #dcdcdc;
 }
 
-/* RIGHT */
+/* RIGHT SIDE */
+
 .hero-right {
   flex: 1;
 }
@@ -256,6 +264,7 @@ body {
 }
 
 /* underline animation */
+
 .project-links a::after {
   content: "";
   position: absolute;
@@ -275,37 +284,66 @@ body {
 /* MOBILE */
 /* ========================= */
 
+.menu-toggle {
+  display: none;
+}
+
+.mobile-header {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
   body {
     flex-direction: column;
   }
 
-  /* NAVBAR */
+  /* SIDEBAR */
   .sidebar {
     width: 100%;
-    height: auto;
     position: relative;
-
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    padding: 15px;
-    border-right: none;
+    padding: 10px 15px;
     border-bottom: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
   }
 
-  .sidebar h2 {
-    display: none;
+  /* MOBILE HEADER */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
-  .sidebar a {
-    font-size: 16px;     /* BIGGER NAV TEXT */
+  .menu-toggle {
+    display: block;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .current-page {
+    font-size: 16px;
     font-weight: 600;
-    padding: 8px 12px;
   }
 
+  /* HIDE MENU */
+  .sidebar h2,
+  .sidebar a {
+    display: none;
+    width: 100%;
+  }
+
+  /* SHOW MENU WHEN OPEN */
+  .sidebar.open h2,
+  .sidebar.open a {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* MAIN */
   .main {
     margin-left: 0;
     padding: 20px;
@@ -360,55 +398,5 @@ body {
 
   .card {
     padding: 15px;
-  }
-}
-
-/* ========================= */
-/* ACTIVE LINK */
-/* ========================= */
-
-.nav-link.active {
-  background: #0077cc;
-  color: white;
-}
-
-/* ========================= */
-/* MOBILE MENU */
-/* ========================= */
-
-.menu-toggle {
-  display: none;
-  font-size: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .sidebar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* hide links by default */
-  .sidebar a {
-    display: none;
-    width: 100%;
-  }
-
-  /* show when active */
-  .sidebar.open a {
-    display: block;
-  }
-
-  /* keep toggle visible */
-  .sidebar.open .menu-toggle {
-    margin-bottom: 10px;
   }
 }
