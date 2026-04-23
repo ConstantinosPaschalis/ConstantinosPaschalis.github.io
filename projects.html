@@ -32,6 +32,10 @@
 <!-- ========================= -->
 
 <div class="card featured">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
   <div class="project-header">
     <div>
       <h3 class="project-title">CO₂ Transport Resilience</h3>
@@ -95,6 +99,10 @@
 <!-- ========================= -->
 
 <div class="card featured">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
   <div class="project-header">
     <div>
       <h3 class="project-title">Mega Heat Pump Economic Evaluation</h3>
@@ -160,6 +168,10 @@
 <!-- ========================= -->
 
 <div class="card">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
   <div class="project-header">
     <div>
       <h3 class="project-title">Industrial Internship</h3>
@@ -211,6 +223,9 @@
 <!-- ========================= -->
 
 <div class="card">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
   <div class="project-header">
     <div>
       <h3 class="project-title">Heat Pump Optimization</h3>
@@ -257,6 +272,9 @@
 <!-- ========================= -->
 
 <div class="card">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
   <div class="project-header">
     <div>
       <h3 class="project-title">Household Energy Optimization</h3>
@@ -303,6 +321,9 @@
 <!-- ========================= -->
 
 <div class="card">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
   <div class="project-header">
     <div>
       <h3 class="project-title">High Temperature Heat Pump</h3>
@@ -349,6 +370,9 @@
 <!-- ========================= -->
 
 <div class="card">
+  <button class="toggle-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
   <div class="project-header">
     <div>
       <h3 class="project-title">HVAC Hardware-in-the-Loop Lab</h3>
@@ -429,11 +453,24 @@
 
   
 <script>
+  // sidebar toggle (keep yours)
   const toggle = document.querySelector('.menu-toggle');
   const sidebar = document.querySelector('.sidebar');
 
   toggle.addEventListener('click', () => {
     sidebar.classList.toggle('open');
+  });
+
+  // project collapse
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const btn = card.querySelector('.toggle-btn');
+
+    btn.addEventListener('click', () => {
+      card.classList.toggle('collapsed');
+      card.classList.toggle('open');
+    });
   });
 </script>
 
