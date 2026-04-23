@@ -267,6 +267,19 @@ body {
   flex: 1;
 }
 
+.project-highlights {
+  margin-top: 10px;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.project-tech {
+  font-size: 13px;
+  color: #555;
+  margin-top: 8px;
+}
+
 /* BETTER TEXT READABILITY */
 
 .project-text p {
