@@ -496,3 +496,45 @@ body {
     margin-top: 10px;
   }
 }
+
+/* ========================= */
+/* PROJECT LINK STYLE */
+/* ========================= */
+
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-links a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+/* ICON COLOR */
+.project-links i {
+  font-size: 14px;
+}
+
+/* HOVER */
+.project-links a:hover {
+  color: #005fa3;
+  transform: translateY(-1px);
+}
+
+/* SEPARATOR */
+.link-separator {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.project-text strong {
+  color: #0077cc;
+}
