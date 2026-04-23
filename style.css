@@ -362,3 +362,53 @@ body {
     padding: 15px;
   }
 }
+
+/* ========================= */
+/* ACTIVE LINK */
+/* ========================= */
+
+.nav-link.active {
+  background: #0077cc;
+  color: white;
+}
+
+/* ========================= */
+/* MOBILE MENU */
+/* ========================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* hide links by default */
+  .sidebar a {
+    display: none;
+    width: 100%;
+  }
+
+  /* show when active */
+  .sidebar.open a {
+    display: block;
+  }
+
+  /* keep toggle visible */
+  .sidebar.open .menu-toggle {
+    margin-bottom: 10px;
+  }
+}
