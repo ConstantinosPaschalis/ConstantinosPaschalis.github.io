@@ -11,7 +11,7 @@
 <div class="sidebar">
   <div class="mobile-header">
     <button class="menu-toggle">☰</button>
-    <span class="current-page">Home</span> <!-- CHANGE PER PAGE -->
+    <span class="current-page" id="currentPage"></span>
   </div>
 
   <h2>Constantinos Paschalis</h2>
@@ -278,6 +278,14 @@
   toggle.addEventListener('click', () => {
     sidebar.classList.toggle('open');
   });
+
+  // AUTO DETECT PAGE NAME
+  const path = window.location.pathname;
+  let pageName = "Home";
+
+  if (path.includes("projects")) pageName = "Projects";
+
+  document.getElementById("currentPage").textContent = pageName;
 </script>
 
 </body>
