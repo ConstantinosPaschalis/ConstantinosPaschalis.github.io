@@ -214,3 +214,98 @@ body {
 .project-links a:hover {
   text-decoration: underline;
 }
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  /* NAVBAR */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar h2 {
+    display: none;
+  }
+
+  .sidebar a {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  /* HERO STACK */
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-divider {
+    display: none;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-left h1 {
+    font-size: 20px;
+  }
+
+  /* CONTACT BUTTONS */
+  .contact-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* PROJECTS STACK */
+  .project-body,
+  .project-body.reverse,
+  .project-body.triple-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .project-side-logo {
+    width: 50px;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+
