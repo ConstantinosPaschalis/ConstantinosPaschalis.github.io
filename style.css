@@ -545,3 +545,48 @@ body {
   margin-right: 6px;
   color: #0077cc;
 }
+
+/* ========================= */
+/* COLLAPSIBLE CARDS */
+/* ========================= */
+
+.card {
+  position: relative;
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font-size: 14px;
+  color: #777;
+
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  color: #0077cc;
+}
+
+/* ROTATE WHEN OPEN */
+.card.open .toggle-btn i {
+  transform: rotate(180deg);
+}
+
+/* CONTENT */
+.card .project-body,
+.card .project-divider {
+  transition: all 0.3s ease;
+}
+
+/* COLLAPSED STATE */
+.card.collapsed .project-body,
+.card.collapsed .project-divider {
+  display: none;
+}
