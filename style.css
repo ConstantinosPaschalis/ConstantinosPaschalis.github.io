@@ -1,53 +1,82 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #ffffff;
   color: #1a1a1a;
   display: flex;
+
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* ========================= */
 /* SIDEBAR */
+/* ========================= */
+
 .sidebar {
-  width: 220px;
+  width: 240px;
   height: 100vh;
   background: #f8f9fb;
   border-right: 1px solid #ddd;
   padding: 30px 20px;
   position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: 2px 0 10px rgba(0,0,0,0.04);
 }
 
 .sidebar h2 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .sidebar a {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;                 /* bigger nav */
+  padding: 8px 10px;
+  border-radius: 8px;
+
   color: #333;
   text-decoration: none;
   font-weight: 500;
+
+  transition: all 0.2s ease;
 }
 
 .sidebar a:hover {
+  background: #eef5ff;
   color: #0077cc;
 }
 
+/* ========================= */
 /* MAIN */
+/* ========================= */
+
 .main {
-  margin-left: 240px;
+  margin-left: 260px;
   padding: 40px;
   max-width: 1000px;
   width: 100%;
 }
 
+/* ========================= */
 /* HERO */
+/* ========================= */
+
 .hero {
   display: flex;
-  align-items: stretch; /* IMPORTANT for vertical line */
+  align-items: stretch;
   gap: 40px;
 }
 
-/* LEFT SIDE */
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -55,9 +84,8 @@ body {
   min-width: 300px;
 }
 
-/* BIGGER PROFILE PIC */
 .profile-pic {
-  width: 320px;     /* bigger */
+  width: 320px;
   height: 320px;
   border-radius: 12px;
   object-fit: cover;
@@ -70,50 +98,50 @@ body {
 }
 
 /* CONTACT BUTTONS */
+
 .contact-buttons {
   display: flex;
-  gap: 16px;              /* more space between buttons */
+  gap: 16px;
   margin-top: 18px;
 }
 
-/* ACTUAL BOXES */
 .contact-btn {
   display: flex;
   align-items: center;
   gap: 8px;
 
-  padding: 10px 16px;     /* bigger = more box feel */
-  border: 1px solid #bbb; /* visible border */
+  padding: 10px 16px;
+  border: 1px solid #bbb;
   border-radius: 10px;
 
   background: #ffffff;
-  text-decoration: none;  /* remove underline */
+  text-decoration: none;
   color: #333;
   font-size: 14px;
+
+  cursor: pointer;
 
   transition: all 0.2s ease;
 }
 
-/* HOVER EFFECT */
 .contact-btn:hover {
   background: #f5f9ff;
   border-color: #0077cc;
   color: #0077cc;
+  transform: translateY(-1px);
 }
 
-/* ICON SIZE */
-.contact-btn i {
-  font-size: 16px;
+.contact-btn:active {
+  transform: scale(0.97);
 }
 
-/* VERTICAL DIVIDER */
+/* DIVIDER */
 .hero-divider {
   width: 1px;
   background: #dcdcdc;
-  height: auto;
 }
 
-/* RIGHT SIDE */
+/* RIGHT */
 .hero-right {
   flex: 1;
 }
@@ -128,13 +156,24 @@ body {
   line-height: 1.7;
 }
 
-/* PROJECT CARDS (unchanged but clean) */
+/* ========================= */
+/* PROJECT CARDS */
+/* ========================= */
+
 .card {
   background: #ffffff;
   padding: 20px;
   margin-top: 25px;
   border-radius: 10px;
   border: 1px solid #ddd;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .project-header {
@@ -190,11 +229,12 @@ body {
 .project-image {
   width: 120px;
   border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .eth-image {
   width: 120px;
-  height: auto;
 }
 
 .project-side-logo {
@@ -205,18 +245,34 @@ body {
   flex: 1;
 }
 
+/* INTERACTIVE LINKS */
+
 .project-links a {
   margin-right: 15px;
   color: #0077cc;
   text-decoration: none;
+  position: relative;
+  font-weight: 500;
 }
 
-.project-links a:hover {
-  text-decoration: underline;
+/* underline animation */
+.project-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background: #0077cc;
+  transition: width 0.25s ease;
+}
+
+.project-links a:hover::after {
+  width: 100%;
 }
 
 /* ========================= */
-/* 📱 MOBILE RESPONSIVE */
+/* MOBILE */
 /* ========================= */
 
 @media (max-width: 768px) {
@@ -230,9 +286,11 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-    display: flex;
+
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     padding: 15px;
     border-right: none;
     border-bottom: 1px solid #ddd;
@@ -243,8 +301,9 @@ body {
   }
 
   .sidebar a {
-    margin: 0;
-    font-size: 14px;
+    font-size: 16px;     /* BIGGER NAV TEXT */
+    font-weight: 600;
+    padding: 8px 12px;
   }
 
   .main {
@@ -252,7 +311,7 @@ body {
     padding: 20px;
   }
 
-  /* HERO STACK */
+  /* HERO */
   .hero {
     flex-direction: column;
     gap: 20px;
@@ -271,7 +330,7 @@ body {
     font-size: 20px;
   }
 
-  /* CONTACT BUTTONS */
+  /* BUTTONS */
   .contact-buttons {
     flex-direction: column;
     width: 100%;
@@ -282,7 +341,7 @@ body {
     width: 100%;
   }
 
-  /* PROJECTS STACK */
+  /* PROJECTS */
   .project-body,
   .project-body.reverse,
   .project-body.triple-layout {
@@ -299,13 +358,7 @@ body {
     width: 50px;
   }
 
-  .project-title {
-    font-size: 16px;
-  }
-
   .card {
     padding: 15px;
   }
 }
-
-
