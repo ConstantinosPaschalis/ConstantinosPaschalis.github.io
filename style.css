@@ -342,24 +342,9 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-
-
-  .mobile-header {
-    position: fixed;   /* 🔥 instead of sticky */
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    z-index: 1000;
-    background: #f8f9fb;
-
-    padding: 10px 15px;
-    border-bottom: 1px solid #ddd;
-  }
-
   
   /* TOP BAR */
-  /*
+  
   .mobile-header {
     position: fixed;
     display: flex;
@@ -367,9 +352,9 @@ body {
     gap: 12px;
     padding: 8px 0;
     border-bottom: 1px solid #eee;
-  } */
+  } 
 
-  .menu-toggle {
+  /*.menu-toggle {
     position: fixed;
     top: 12px;
     left: 12px;
@@ -379,6 +364,22 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+  }*/
+  .menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2000;
+
+    font-size: 22px;
+    background: #f8f9fb;
+    border: none;
+    cursor: pointer;
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
 
   .menu-toggle:active {
