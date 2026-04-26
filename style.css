@@ -345,6 +345,7 @@ body {
 
   /* TOP BAR */
   .mobile-header {
+    position: fixed;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -353,6 +354,7 @@ body {
   }
 
   .menu-toggle {
+    position: fixed;
     display: block;
     font-size: 22px;
     background: none;
