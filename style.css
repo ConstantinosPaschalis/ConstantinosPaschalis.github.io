@@ -353,7 +353,6 @@ body {
   }
 
   .menu-toggle {
-    position: fixed;
     display: block;
     font-size: 22px;
     background: none;
