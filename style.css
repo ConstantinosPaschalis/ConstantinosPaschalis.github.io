@@ -343,7 +343,23 @@ body {
     gap: 10px;
   }
 
+
+  .mobile-header {
+    position: fixed;   /* 🔥 instead of sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+    background: #f8f9fb;
+
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  
   /* TOP BAR */
+  /*
   .mobile-header {
     position: fixed;
     display: flex;
@@ -351,10 +367,13 @@ body {
     gap: 12px;
     padding: 8px 0;
     border-bottom: 1px solid #eee;
-  }
+  } */
 
   .menu-toggle {
     position: fixed;
+    top: 12px;
+    left: 12px;
+    
     display: block;
     font-size: 22px;
     background: none;
