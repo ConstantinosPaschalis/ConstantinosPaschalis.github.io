@@ -345,14 +345,17 @@ body {
 
   /* TOP BAR */
   .mobile-header {
+    position: fixed;
     display: flex;
     align-items: center;
     gap: 12px;
     padding-bottom: 8px;
     border-bottom: 1px solid #eee;
+    padding-left: 40px;
   }
 
   .menu-toggle {
+    position: fixed;
     display: block;
     font-size: 22px;
     background: none;
