@@ -356,7 +356,7 @@ body {
     padding-bottom: 8px;
     border-bottom: 1px solid #eee;
 
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
