@@ -350,6 +350,11 @@ body {
     gap: 12px;
     padding-bottom: 8px;
     border-bottom: 1px solid #eee;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #f8f9fb;
   }
 
   .menu-toggle {
