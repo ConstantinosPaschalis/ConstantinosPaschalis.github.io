@@ -26,6 +26,146 @@
 
 <h1>Featured Projects</h1>
 
+<!-- ========================= -->
+<!-- MASTER THESIS -->
+<!-- ========================= -->
+
+<div class="card featured">
+  <button class="toggle-btn" aria-label="Toggle master thesis details">
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
+  <div class="project-header">
+    <div>
+      <h3 class="project-title">
+        Borehole Thermal Energy Storage in District Energy Systems
+      </h3>
+
+      <p class="project-place">
+        ETH Zürich &amp; Empa — Zürich, Switzerland
+      </p>
+
+      <p class="project-date">
+        Master Thesis, Spring–Summer 2026
+      </p>
+    </div>
+  </div>
+
+  <hr class="project-divider">
+
+  <div class="project-body with-image">
+
+    <div class="project-text">
+
+      <p>
+        <strong>
+          <i class="fa-regular fa-circle-question"></i> Problem:
+        </strong>
+        Borehole Thermal Energy Storage can improve the flexibility and
+        efficiency of district heating and cooling systems. However, accurately
+        representing its dynamic interaction with heat pumps and chillers
+        creates computationally demanding optimization problems. This thesis
+        investigates which modeling features are necessary for reliable system
+        design and which can be simplified without significantly affecting the
+        optimal solution.
+      </p>
+
+      <p>
+        <strong>
+          <i class="fa-solid fa-gears"></i> Approach:
+        </strong>
+        Developed and compared three system-sizing approaches: a
+        Mixed-Integer Nonlinear Programming model, a Mixed-Integer Linear
+        Programming reformulation based on McCormick relaxations, and a
+        steady-state heuristic model. The analysis evaluated three operational
+        strategies for the BTES-connected heat pump and chiller, alternative
+        linearization schemes, seasonal charging-period assumptions, and two
+        energy-system configurations of increasing complexity.
+      </p>
+
+      <p>
+        <strong>
+          <i class="fa-solid fa-chart-line"></i> Result:
+        </strong>
+        Allowing the condenser and evaporator temperatures to vary throughout
+        the year reduced annual system cost by approximately 2.7% without a
+        noticeable computational penalty. A one-segment MILP reproduced the
+        nonlinear reference solution more closely and with substantially lower
+        computational effort than the original three-segment formulation.
+        Prescribing the seasonal charging period provided further computational
+        savings while maintaining close agreement with the nonlinear model.
+      </p>
+
+      <ul class="project-highlights">
+        <li>
+          Compared MINLP, MILP, and heuristic system-sizing approaches
+        </li>
+
+        <li>
+          Evaluated three BTES heat-pump and chiller operational strategies
+        </li>
+
+        <li>
+          Developed McCormick linearizations for nonlinear
+          temperature–power relationships
+        </li>
+
+        <li>
+          Verified the optimization model against a detailed Modelica simulation
+        </li>
+
+        <li>
+          Assessed trade-offs between model fidelity, solution quality,
+          and computational performance
+        </li>
+      </ul>
+
+      <p class="project-tech">
+        <strong>Tools:</strong>
+        Python, Pyomo, Gurobi, Mixed-Integer Optimization,
+        Techno-Economic Modeling
+      </p>
+
+      <div class="project-links">
+
+        <a
+          href="projects/Constantinos_Paschalis_Master_Thesis.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-file-pdf"></i> Thesis
+        </a>
+
+        <span class="link-separator">|</span>
+
+        <a
+          href="projects/Constantinos_Paschalis_Thesis_Presentation.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-file-powerpoint"></i> Presentation
+        </a>
+
+      </div>
+
+    </div>
+
+    <a
+      href="images/rmse.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open comparison of normalized model differences"
+    >
+      <img
+        src="images/rmse.png"
+        class="project-image large"
+        alt="Normalized root-mean-square differences of the linearized formulations relative to the reference MINLP model"
+        loading="lazy"
+      >
+    </a>
+
+  </div>
+</div>
 
 <!-- ========================= -->
 <!-- CO2 PROJECT -->
