@@ -677,3 +677,40 @@ body {
 .featured-section.collapsed .card {
   display: none;
 }
+
+
+.selected-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.selected-header h1 {
+    margin: 0;
+}
+
+.selected-toggle {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.selected-toggle:hover {
+    color: #0077cc;
+}
+
+.selected-toggle i {
+    transition: transform 0.2s ease;
+}
+
+.selected-section.collapsed .selected-toggle i {
+    transform: rotate(-90deg);
+}
+
+.selected-section.collapsed .card {
+    display: none;
+}
