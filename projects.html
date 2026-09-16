@@ -31,270 +31,279 @@
 <!-- MASTER THESIS -->
 <!-- ========================= -->
 
-<div class="card featured">
-  <button class="toggle-btn" aria-label="Toggle master thesis details">
-    <i class="fa-solid fa-chevron-down"></i>
-  </button>
+<div class="featured-section">
 
-  <div class="project-header">
-    <div>
-      <h3 class="project-title">
-        Borehole Thermal Energy Storage in District Energy Systems
-      </h3>
-
-      <p class="project-place">
-        ETH Zürich &amp; Empa — Zürich, Switzerland
-      </p>
-
-      <p class="project-date">
-        Master Thesis, Spring–Summer 2026
-      </p>
-    </div>
+  <div class="featured-header">
+    <h1>Featured Projects</h1>
+    <button class="featured-toggle" aria-label="Toggle featured projects">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
   </div>
-
-  <hr class="project-divider">
-
-  <div class="project-body thesis-layout">
-    
-    <div class="project-text">
-
-      <p>
-        <strong>
-          <i class="fa-regular fa-circle-question"></i> Problem:
-        </strong>
-        Borehole Thermal Energy Storage can improve the flexibility and
-        efficiency of district heating and cooling systems. However, accurately
-        representing its dynamic interaction with heat pumps and chillers
-        creates computationally demanding optimization problems. This thesis
-        investigates which modeling features are necessary for reliable system
-        design and which can be simplified without significantly affecting the
-        optimal solution.
-      </p>
-
-      <p>
-        <strong>
-          <i class="fa-solid fa-gears"></i> Approach:
-        </strong>
-        Developed and compared three system-sizing approaches: a
-        Mixed-Integer Nonlinear Programming model, a Mixed-Integer Linear
-        Programming reformulation based on McCormick relaxations, and a
-        steady-state heuristic model. The analysis evaluated three operational
-        strategies for the BTES-connected heat pump and chiller, alternative
-        linearization schemes, seasonal charging-period assumptions, and two
-        energy-system configurations of increasing complexity.
-      </p>
-
-      <p>
-        <strong>
-          <i class="fa-solid fa-chart-line"></i> Result:
-        </strong>
-        Allowing the condenser and evaporator temperatures to vary throughout
-        the year reduced annual system cost by approximately 2.7% without a
-        noticeable computational penalty. A one-segment MILP reproduced the
-        nonlinear reference solution more closely and with substantially lower
-        computational effort than the original three-segment formulation.
-        Prescribing the seasonal charging period provided further computational
-        savings while maintaining close agreement with the nonlinear model.
-      </p>
-
-      <ul class="project-highlights">
-        <li>Compared MINLP, MILP, and heuristic system-sizing approaches</li>
-        <li>Evaluated three BTES heat-pump and chiller operational strategies</li>
-        <li>Developed McCormick linearizations for nonlinear temperature–power relationships</li>
-        <li>Verified the optimization model against a detailed Modelica simulation</li>
-        <li>Assessed trade-offs between model fidelity, solution quality, and computational performance</li>
-      </ul>
-
-      <p class="project-tech">
-        <strong>Tools:</strong>
-        Python, Pyomo, Gurobi, Modelica, Mixed-Integer Optimization,
-        Techno-Economic Modeling
-      </p>
-
-      <div class="project-links">
-        <a
-          href="projects/Constantinos_Paschalis_Master_Thesis.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-solid fa-file-pdf"></i> Thesis
-        </a>
-
-        <span class="link-separator">|</span>
-
-        <a
-          href="projects/Constantinos Paschalis - Final Presentation.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-solid fa-file-powerpoint"></i> Presentation
-        </a>
+  
+  <div class="card featured">
+    <button class="toggle-btn" aria-label="Toggle master thesis details">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  
+    <div class="project-header">
+      <div>
+        <h3 class="project-title">
+          Borehole Thermal Energy Storage in District Energy Systems
+        </h3>
+  
+        <p class="project-place">
+          ETH Zürich &amp; Empa — Zürich, Switzerland
+        </p>
+  
+        <p class="project-date">
+          Master Thesis, Spring–Summer 2026
+        </p>
       </div>
-
     </div>
-
-    <div style="width:100%; margin-top:25px;">
-      <a
-        href="images/rmse.png"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="display:block; width:100%;"
-      >
-        <img
-          src="images/rmse.png"
-          alt="Normalized root-mean-square differences of the linearized formulations relative to the reference MINLP model"
-          loading="lazy"
-          style="
-            display:block;
-            width:100%;
-            height:auto;
-            max-width:900px;
-            margin:0 auto;
-            border-radius:8px;
-            box-shadow:0 4px 12px rgba(0,0,0,0.08);
-            cursor:zoom-in;
-          "
-        >
-      </a>
-    </div>
-
-  </div>
-</div>
-
   
-<!-- ========================= -->
-<!-- CO2 PROJECT -->
-<!-- ========================= -->
-
-<div class="card featured">
-  <button class="toggle-btn">
-    <i class="fa-solid fa-chevron-down"></i>
-  </button>
-
-  <div class="project-header">
-    <div>
-      <h3 class="project-title">CO₂ Transport Resilience</h3>
-      <p class="project-place">ETH Zürich - Zurich, Switzerland</p>
-      <p class="project-date">Fall 2025</p>
-    </div>
-  </div>
-
-  <hr class="project-divider">
-
-  <div class="project-body with-image">
-
-    <div class="project-text">
+    <hr class="project-divider">
   
-      <p>
-        <strong><i class="fa-regular fa-circle-question"></i> Problem:</strong> CO₂ transport networks are vulnerable to infrastructure failures, which can significantly increase both cost and emissions depending on the available mitigation strategy.
-      </p>
-    
-      <p>
-        <strong><i class="fa-solid fa-gears"></i> Approach:</strong> Developed a techno-economic framework modeling multiple transport options (pipeline, truck, train, ship, barge), temporary storage, and system constraints. The model evaluates system performance under different failure durations, transport distances, and carbon pricing scenarios.
-      </p>
-    
-      <p>
-        <strong><i class="fa-solid fa-chart-line"></i> Result:</strong> The analysis shows that resilience strategies are not universally optimal. Temporary CO₂ storage emerges as the most robust solution across a wide range of scenarios, while alternative transport modes become competitive under specific distance and disruption conditions. The Pareto front highlights the trade-off between cost and emissions across different configurations.
-      </p>
+    <div class="project-body thesis-layout">
       
-      <ul class="project-highlights">
-        <li>Modeled multi-modal transport systems (pipeline, truck, trains, ship, barges)</li>
-        <li>Integrated carbon pricing and failure scenarios</li>
-        <li>Analyzed cost–emission trade-offs</li>
-      </ul>
+      <div class="project-text">
   
-      <p class="project-tech">
-        <strong>Tools:</strong> Python, Network Modeling
-      </p>
+        <p>
+          <strong>
+            <i class="fa-regular fa-circle-question"></i> Problem:
+          </strong>
+          Borehole Thermal Energy Storage can improve the flexibility and
+          efficiency of district heating and cooling systems. However, accurately
+          representing its dynamic interaction with heat pumps and chillers
+          creates computationally demanding optimization problems. This thesis
+          investigates which modeling features are necessary for reliable system
+          design and which can be simplified without significantly affecting the
+          optimal solution.
+        </p>
   
-      <div class="project-links">
-        <a href="projects/CO2_Transport_Resilience.pdf" target="_blank">
-          <i class="fa-solid fa-file-pdf"></i> Report
-        </a>
-
-        <span class="link-separator">|</span>
-        
-        <a href="projects/SP_Constantinos_Paschalis_presentation.pdf" target="_blank">
-          <i class="fa-solid fa-file-powerpoint"></i> Presentation
+        <p>
+          <strong>
+            <i class="fa-solid fa-gears"></i> Approach:
+          </strong>
+          Developed and compared three system-sizing approaches: a
+          Mixed-Integer Nonlinear Programming model, a Mixed-Integer Linear
+          Programming reformulation based on McCormick relaxations, and a
+          steady-state heuristic model. The analysis evaluated three operational
+          strategies for the BTES-connected heat pump and chiller, alternative
+          linearization schemes, seasonal charging-period assumptions, and two
+          energy-system configurations of increasing complexity.
+        </p>
+  
+        <p>
+          <strong>
+            <i class="fa-solid fa-chart-line"></i> Result:
+          </strong>
+          Allowing the condenser and evaporator temperatures to vary throughout
+          the year reduced annual system cost by approximately 2.7% without a
+          noticeable computational penalty. A one-segment MILP reproduced the
+          nonlinear reference solution more closely and with substantially lower
+          computational effort than the original three-segment formulation.
+          Prescribing the seasonal charging period provided further computational
+          savings while maintaining close agreement with the nonlinear model.
+        </p>
+  
+        <ul class="project-highlights">
+          <li>Compared MINLP, MILP, and heuristic system-sizing approaches</li>
+          <li>Evaluated three BTES heat-pump and chiller operational strategies</li>
+          <li>Developed McCormick linearizations for nonlinear temperature–power relationships</li>
+          <li>Verified the optimization model against a detailed Modelica simulation</li>
+          <li>Assessed trade-offs between model fidelity, solution quality, and computational performance</li>
+        </ul>
+  
+        <p class="project-tech">
+          <strong>Tools:</strong>
+          Python, Pyomo, Gurobi, Modelica, Mixed-Integer Optimization,
+          Techno-Economic Modeling
+        </p>
+  
+        <div class="project-links">
+          <a
+            href="projects/Constantinos_Paschalis_Master_Thesis.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-file-pdf"></i> Thesis
+          </a>
+  
+          <span class="link-separator">|</span>
+  
+          <a
+            href="projects/Constantinos Paschalis - Final Presentation.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-file-powerpoint"></i> Presentation
+          </a>
+        </div>
+  
+      </div>
+  
+      <div style="width:100%; margin-top:25px;">
+        <a
+          href="images/rmse.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display:block; width:100%;"
+        >
+          <img
+            src="images/rmse.png"
+            alt="Normalized root-mean-square differences of the linearized formulations relative to the reference MINLP model"
+            loading="lazy"
+            style="
+              display:block;
+              width:100%;
+              height:auto;
+              max-width:900px;
+              margin:0 auto;
+              border-radius:8px;
+              box-shadow:0 4px 12px rgba(0,0,0,0.08);
+              cursor:zoom-in;
+            "
+          >
         </a>
       </div>
   
     </div>
-
-    <a href="images/CO2_results.png" target="_blank">
-      <img src="images/CO2_results.png" class="project-image large">
-    </a>
-    
   </div>
-</div>
-
-
-<!-- ========================= -->
-<!-- MEGA HEAT PUMP (FEATURED) -->
-<!-- ========================= -->
-
-<div class="card featured">
-  <button class="toggle-btn">
-    <i class="fa-solid fa-chevron-down"></i>
-  </button>
-
-  <div class="project-header">
-    <div>
-      <h3 class="project-title">Mega Heat Pump Economic Evaluation</h3>
-      <p class="project-place">ETH Zürich × Everllence (ex MAN Energy Solutions)</p>
-      <p class="project-date">Fall 2024 - Spring 2025</p>
+  
+    
+  <!-- ========================= -->
+  <!-- CO2 PROJECT -->
+  <!-- ========================= -->
+  
+  <div class="card featured">
+    <button class="toggle-btn">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  
+    <div class="project-header">
+      <div>
+        <h3 class="project-title">CO₂ Transport Resilience</h3>
+        <p class="project-place">ETH Zürich - Zurich, Switzerland</p>
+        <p class="project-date">Fall 2025</p>
+      </div>
     </div>
-  </div>
-
-  <hr class="project-divider">
-
-  <div class="project-body with-image">
-
-    <div class="project-text">
   
-      <p>
-        <strong><i class="fa-regular fa-circle-question"></i> Problem:</strong> Large-scale heat pumps can provide flexibility services to the grid, but their economic viability depends on how effectively they can participate in electricity balancing markets (FCR).
-      </p>
+    <hr class="project-divider">
+  
+    <div class="project-body with-image">
+  
+      <div class="project-text">
     
-      <p>
-        <strong><i class="fa-solid fa-gears"></i> Approach:</strong> Developed a techno-economic model integrating thermodynamic system behavior with electricity market data. The model evaluates different operational strategies, including participation in FCR markets and system oversizing, to determine optimal dispatch and profitability.
-      </p>
-    
-      <p>
-        <strong><i class="fa-solid fa-chart-line"></i> Result:</strong> FCR revenues exhibit strong temporal variability, creating opportunities for flexible operation strategies. Oversizing the heat pump enables participation in these markets, increasing system utilization and improving overall economic performance compared to standard operation.
-      </p>
-  
-      <ul class="project-highlights">
-        <li>Integrated thermodynamic modeling with electricity market participation</li>
-        <li>Evaluated system performance across different sizing strategies</li>
-        <li>Quantified the value of flexibility and grid services</li>
-      </ul>
-  
-      <p class="project-tech">
-        <strong>Tools:</strong> Python, Thermodynamic Modeling, Energy Markets
-      </p>
-  
-      <div class="project-links">
-        <a href="projects/Case_Study_FInal_Report.pdf" target="_blank">
-          <i class="fa-solid fa-file-pdf"></i>Report
-        </a>
-
-        <span class="link-separator">|</span>
+        <p>
+          <strong><i class="fa-regular fa-circle-question"></i> Problem:</strong> CO₂ transport networks are vulnerable to infrastructure failures, which can significantly increase both cost and emissions depending on the available mitigation strategy.
+        </p>
+      
+        <p>
+          <strong><i class="fa-solid fa-gears"></i> Approach:</strong> Developed a techno-economic framework modeling multiple transport options (pipeline, truck, train, ship, barge), temporary storage, and system constraints. The model evaluates system performance under different failure durations, transport distances, and carbon pricing scenarios.
+        </p>
+      
+        <p>
+          <strong><i class="fa-solid fa-chart-line"></i> Result:</strong> The analysis shows that resilience strategies are not universally optimal. Temporary CO₂ storage emerges as the most robust solution across a wide range of scenarios, while alternative transport modes become competitive under specific distance and disruption conditions. The Pareto front highlights the trade-off between cost and emissions across different configurations.
+        </p>
         
-        <a href="projects/Case_Study_FInal_Presentation.pdf" target="_blank">
-          <i class="fa-solid fa-file-powerpoint"></i> Presentation
-        </a>
+        <ul class="project-highlights">
+          <li>Modeled multi-modal transport systems (pipeline, truck, trains, ship, barges)</li>
+          <li>Integrated carbon pricing and failure scenarios</li>
+          <li>Analyzed cost–emission trade-offs</li>
+        </ul>
+    
+        <p class="project-tech">
+          <strong>Tools:</strong> Python, Network Modeling
+        </p>
+    
+        <div class="project-links">
+          <a href="projects/CO2_Transport_Resilience.pdf" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i> Report
+          </a>
+  
+          <span class="link-separator">|</span>
+          
+          <a href="projects/SP_Constantinos_Paschalis_presentation.pdf" target="_blank">
+            <i class="fa-solid fa-file-powerpoint"></i> Presentation
+          </a>
+        </div>
+    
       </div>
   
+      <a href="images/CO2_results.png" target="_blank">
+        <img src="images/CO2_results.png" class="project-image large">
+      </a>
+      
     </div>
-
-    <a href="images/MAN_results.png" target="_blank">
-      <img src="images/MAN_results.png" class="project-image large">
-    </a>
-  
   </div>
-</div>
-
+  
+  
+  <!-- ========================= -->
+  <!-- MEGA HEAT PUMP (FEATURED) -->
+  <!-- ========================= -->
+  
+  <div class="card featured">
+    <button class="toggle-btn">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  
+    <div class="project-header">
+      <div>
+        <h3 class="project-title">Mega Heat Pump Economic Evaluation</h3>
+        <p class="project-place">ETH Zürich × Everllence (ex MAN Energy Solutions)</p>
+        <p class="project-date">Fall 2024 - Spring 2025</p>
+      </div>
+    </div>
+  
+    <hr class="project-divider">
+  
+    <div class="project-body with-image">
+  
+      <div class="project-text">
+    
+        <p>
+          <strong><i class="fa-regular fa-circle-question"></i> Problem:</strong> Large-scale heat pumps can provide flexibility services to the grid, but their economic viability depends on how effectively they can participate in electricity balancing markets (FCR).
+        </p>
+      
+        <p>
+          <strong><i class="fa-solid fa-gears"></i> Approach:</strong> Developed a techno-economic model integrating thermodynamic system behavior with electricity market data. The model evaluates different operational strategies, including participation in FCR markets and system oversizing, to determine optimal dispatch and profitability.
+        </p>
+      
+        <p>
+          <strong><i class="fa-solid fa-chart-line"></i> Result:</strong> FCR revenues exhibit strong temporal variability, creating opportunities for flexible operation strategies. Oversizing the heat pump enables participation in these markets, increasing system utilization and improving overall economic performance compared to standard operation.
+        </p>
+    
+        <ul class="project-highlights">
+          <li>Integrated thermodynamic modeling with electricity market participation</li>
+          <li>Evaluated system performance across different sizing strategies</li>
+          <li>Quantified the value of flexibility and grid services</li>
+        </ul>
+    
+        <p class="project-tech">
+          <strong>Tools:</strong> Python, Thermodynamic Modeling, Energy Markets
+        </p>
+    
+        <div class="project-links">
+          <a href="projects/Case_Study_FInal_Report.pdf" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i>Report
+          </a>
+  
+          <span class="link-separator">|</span>
+          
+          <a href="projects/Case_Study_FInal_Presentation.pdf" target="_blank">
+            <i class="fa-solid fa-file-powerpoint"></i> Presentation
+          </a>
+        </div>
+    
+      </div>
+  
+      <a href="images/MAN_results.png" target="_blank">
+        <img src="images/MAN_results.png" class="project-image large">
+      </a>
+    
+    </div>
+  </div>
+<div>
   
 <h1>Selected Projects</h1>
   
