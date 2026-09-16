@@ -617,3 +617,18 @@ body {
 .card.collapsed .project-divider {
   display: none;
 }
+
+/* ========================= */
+/* CERTIFICATES */
+/* ========================= */
+
+.certificate-body {
+  align-items: center;
+}
+
+.certificate-icon {
+  font-size: 40px;
+  color: #0077cc;
+  width: 60px;
+  text-align: center;
+}
