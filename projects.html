@@ -614,7 +614,21 @@
     });
   });
 </script>
+
+<script>
+  // Featured Projects collapse
+  const featuredToggle = document.querySelector('.featured-toggle');
+  const featuredSection = document.querySelector('.featured-section');
+
+  if (featuredToggle) {
+    featuredToggle.addEventListener('click', () => {
+      featuredSection.classList.toggle('collapsed');
+    });
+  }
+</script>
+
   
 </body>
 </html>
+
 
