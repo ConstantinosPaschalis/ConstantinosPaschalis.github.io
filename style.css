@@ -670,12 +670,8 @@ body {
   transform: rotate(-90deg);
 }
 
-.featured-section.collapsed .card {
-  display: none;
-}
-
-.featured-section.collapsed .card {
-  display: none;
+.featured-section.collapsed .card.featured {
+    display: none;
 }
 
 
