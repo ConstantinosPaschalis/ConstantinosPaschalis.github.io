@@ -673,3 +673,7 @@ body {
 .featured-section.collapsed .card {
   display: none;
 }
+
+.featured-section.collapsed .card {
+  display: none;
+}
