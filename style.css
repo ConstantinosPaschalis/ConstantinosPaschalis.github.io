@@ -714,3 +714,7 @@ body {
 .selected-section.collapsed .card {
     display: none;
 }
+
+.selected-section.collapsed .card {
+    display: none;
+}
